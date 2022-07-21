@@ -1,4 +1,4 @@
-subscription_id = "4eb40622-2293-46b5-ba67-1972124eb5ab"
+subscription_id = "*******************"
 client_id       = "*******************"
 client_secret   = "************"
 tenant_id       = "*********"
