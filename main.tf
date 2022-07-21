@@ -1,3 +1,5 @@
+# we have differnt ways to provide a provider block
+
 #terraform {
  # required_providers {
  #   azurerm={
@@ -6,13 +8,20 @@
   #  }
   #}
 #}
+            # (or)
+
+#provider "azurerm" {
+ # version = ">=1.40.0"
+  #features {}
+#}
+            # (or)
 
 # provider "azurerm" {
  # features {
    # subscription_id ="*********************" 
- # }
-  
+ # }  
 #}
+
 # Create a provider
 provider "azurerm" {
   subscription_id = "${var.subscription_id}"
