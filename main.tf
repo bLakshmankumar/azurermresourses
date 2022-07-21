@@ -96,7 +96,7 @@ resource "azurerm_mysql_server" "app_server" {
   version                      = "12.0"
   administrator_login          = "${var.sqladmin}"
   administrator_login_password = "${var.admpasswd}"
-  ssl_enforcement_enabled      = true
+  ssl_enforcement_enabled      = false
 
   sku_name   = "GP_Gen5_4"
   storage_mb = 5120
